@@ -14,7 +14,7 @@ public class Exemplaire implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
 	private String etatPhysique;
@@ -35,9 +35,17 @@ public class Exemplaire implements Serializable {
 
 	public Exemplaire() {
 	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getEtatPhysique() {
-		return this.etatPhysique;
+		return etatPhysique;
 	}
 
 	public void setEtatPhysique(String etatPhysique) {
@@ -45,7 +53,7 @@ public class Exemplaire implements Serializable {
 	}
 
 	public int getNumero() {
-		return this.numero;
+		return numero;
 	}
 
 	public void setNumero(int numero) {
@@ -53,7 +61,7 @@ public class Exemplaire implements Serializable {
 	}
 
 	public String getUsageExemplaire() {
-		return this.usageExemplaire;
+		return usageExemplaire;
 	}
 
 	public void setUsageExemplaire(String usageExemplaire) {
@@ -61,7 +69,7 @@ public class Exemplaire implements Serializable {
 	}
 
 	public Emprunt getEmprunt() {
-		return this.emprunt;
+		return emprunt;
 	}
 
 	public void setEmprunt(Emprunt emprunt) {
@@ -69,7 +77,7 @@ public class Exemplaire implements Serializable {
 	}
 
 	public Oeuvre getOeuvre() {
-		return this.oeuvre;
+		return oeuvre;
 	}
 
 	public void setOeuvre(Oeuvre oeuvre) {

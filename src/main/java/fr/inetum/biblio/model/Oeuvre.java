@@ -15,7 +15,7 @@ public class Oeuvre implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer idOeuvre;
 
 	private String auteur;
@@ -31,16 +31,16 @@ public class Oeuvre implements Serializable {
 	public Oeuvre() {
 	}
 
-	public int getIdOeuvre() {
-		return this.idOeuvre;
+	public Integer getIdOeuvre() {
+		return idOeuvre;
 	}
 
-	public void setIdOeuvre(int idOeuvre) {
+	public void setIdOeuvre(Integer idOeuvre) {
 		this.idOeuvre = idOeuvre;
 	}
 
 	public String getAuteur() {
-		return this.auteur;
+		return auteur;
 	}
 
 	public void setAuteur(String auteur) {
@@ -48,7 +48,7 @@ public class Oeuvre implements Serializable {
 	}
 
 	public String getÉditeur() {
-		return this.éditeur;
+		return éditeur;
 	}
 
 	public void setÉditeur(String éditeur) {
@@ -56,7 +56,7 @@ public class Oeuvre implements Serializable {
 	}
 
 	public String getTitre() {
-		return this.titre;
+		return titre;
 	}
 
 	public void setTitre(String titre) {
@@ -64,7 +64,7 @@ public class Oeuvre implements Serializable {
 	}
 
 	public List<Exemplaire> getExemplaires() {
-		return this.exemplaires;
+		return exemplaires;
 	}
 
 	public void setExemplaires(List<Exemplaire> exemplaires) {
