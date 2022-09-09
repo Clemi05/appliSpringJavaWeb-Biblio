@@ -6,17 +6,26 @@
 </head>
 <body>
 
-<nav>
-      <a href="index.php">Livres Disponibles</a>
-      <a href="livres.php">Requetes livres</a>
-      <a href="">Emprunts</a>
-      <a href="inscription.php">Abonnés</a>
-     <a href="">Quitter</a>
-    </nav>
-    
-    <main>
+	<nav>
+		<a href="index.php">Livres Disponibles</a>
+		<a href="livres.php">Requetes livres</a>
+		<a href="">Emprunts</a>
+		<a href="inscription.php">Abonnés</a>
+		<a href="">Quitter</a>
+	</nav>
+	<main>
     <h1>Bienvenue à la bibliothèque JAVA</h1>
     
     </main>
+	<form action="login" method="post">
+		<table>
+			<tr><td>Nom :</td><td><input type="text" name="nom"></td></tr>
+			<tr><td>Prenom :</td><td><input type="text" name="prenom"></td></tr>
+			<tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+			<tr><td>Mot de passe :</td><td><input type="password" name="password"></td></tr>
+			<tr><td><input type="submit" value="Login"></td></tr>
+		</table>
+	</form>
+    
 </body>
 </html>
