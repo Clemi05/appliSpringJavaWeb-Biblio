@@ -16,7 +16,7 @@ public class Emprunt implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -37,16 +37,16 @@ public class Emprunt implements Serializable {
 	public Emprunt() {
 	}
 
-	public int getId() {
-		return this.id;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
 	public Date getDateDebut() {
-		return this.dateDebut;
+		return dateDebut;
 	}
 
 	public void setDateDebut(Date dateDebut) {
@@ -54,7 +54,7 @@ public class Emprunt implements Serializable {
 	}
 
 	public Date getDateFin() {
-		return this.dateFin;
+		return dateFin;
 	}
 
 	public void setDateFin(Date dateFin) {
@@ -62,7 +62,7 @@ public class Emprunt implements Serializable {
 	}
 
 	public Abonne getAbonne() {
-		return this.abonne;
+		return abonne;
 	}
 
 	public void setAbonne(Abonne abonne) {

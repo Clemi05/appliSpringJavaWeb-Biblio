@@ -16,7 +16,7 @@ public class Abonne implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -44,16 +44,16 @@ public class Abonne implements Serializable {
 	public Abonne() {
 	}
 
-	public int getId() {
-		return this.id;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
 	public Date getDateDebutAbonnement() {
-		return this.dateDebutAbonnement;
+		return dateDebutAbonnement;
 	}
 
 	public void setDateDebutAbonnement(Date dateDebutAbonnement) {
@@ -61,7 +61,7 @@ public class Abonne implements Serializable {
 	}
 
 	public Date getDateFinAbonnement() {
-		return this.dateFinAbonnement;
+		return dateFinAbonnement;
 	}
 
 	public void setDateFinAbonnement(Date dateFinAbonnement) {
@@ -69,7 +69,7 @@ public class Abonne implements Serializable {
 	}
 
 	public Date getDateNaissance() {
-		return this.dateNaissance;
+		return dateNaissance;
 	}
 
 	public void setDateNaissance(Date dateNaissance) {
@@ -77,7 +77,7 @@ public class Abonne implements Serializable {
 	}
 
 	public String getEmail() {
-		return this.email;
+		return email;
 	}
 
 	public void setEmail(String email) {
@@ -85,7 +85,7 @@ public class Abonne implements Serializable {
 	}
 
 	public String getNom() {
-		return this.nom;
+		return nom;
 	}
 
 	public void setNom(String nom) {
@@ -93,7 +93,7 @@ public class Abonne implements Serializable {
 	}
 
 	public String getPassword() {
-		return this.password;
+		return password;
 	}
 
 	public void setPassword(String password) {
@@ -101,7 +101,7 @@ public class Abonne implements Serializable {
 	}
 
 	public String getPrenom() {
-		return this.prenom;
+		return prenom;
 	}
 
 	public void setPrenom(String prenom) {
@@ -109,7 +109,7 @@ public class Abonne implements Serializable {
 	}
 
 	public List<Emprunt> getEmprunts() {
-		return this.emprunts;
+		return emprunts;
 	}
 
 	public void setEmprunts(List<Emprunt> emprunts) {

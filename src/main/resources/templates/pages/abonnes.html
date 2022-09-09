@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>Abonnés</title>
-<link type="text/css" rel="stylesheet" href="CSS/biblio.css" />
-</head>
-<body>
-
-<nav>
-      <a href="/livres-dispo">Livres Disponibles</a>
-      <a href="/recherche">Recherche livres</a>
-      <a href="/emprunts">Emprunts</a>
-      <a href="/abonnes">Abonnés</a>
-     <a href="/">Quitter</a>
-    </nav>
-    
-Abonnés
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Abonnés</title>
+		<link type="text/css" rel="stylesheet" href="CSS/biblio.css" />
+		</head>
+	<body>
+	
+	<nav>
+	      <a href="/livres-dispo">Livres Disponibles</a>
+	      <a href="/recherche">Recherche livres</a>
+	      <a href="/emprunts">Emprunts</a>
+	      <a href="/abonnes">Abonnés</a>
+	     <a href="/">Quitter</a>
+	    </nav>
+	    
+	  <h2>Formulaire d'ajout des nouveaux  abonnés :</h2>
+	    <div class="cont">
+	        <form action="" method="POST">
+	              <p>NOM</p>
+	              <input type="text" name="nom" id="nom" class="champ"  size="25"  >
+	              <p>PRENOM</p>
+	              <input type="text" name="prenom" id="prenom" class="champ" size="25">
+	              <p>EMAIL</p>
+	              <input type="email" name="email" id="email" class="champ"  size="25">
+	              <p>DATE DE NAISSANCE</p>
+	              <input type="date" name="dob" id="dob" class="champ">
+	              <p>MOT DE PASSE</p>
+	              <input type="password" name="password" id="password" class="champ"  size="25">
+	            <div>
+	              <input type="submit" name="bajout" value="Ajouter" class="bouton">
+	              <input type="submit" name="bsupp" value="Supprimer" class="bouton">
+	            </div>
+	        </form>
+	      </div>
+	</body>
 </html>
