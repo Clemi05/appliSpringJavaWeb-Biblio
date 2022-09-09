@@ -1,0 +1,16 @@
+:root{
+    --maincolor : #5D815A;
+    --secondcolor: #A9B69E ;
+    --backgroundcolor: #F3EBE0 ;
+    --textcolor: white;
+}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    padding: 0px;
+    background-color: var(--backgroundcolor);
+    text-align: center;
+}
