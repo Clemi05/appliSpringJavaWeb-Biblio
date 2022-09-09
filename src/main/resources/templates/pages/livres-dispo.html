@@ -7,6 +7,8 @@
 </head>
 <body>
 
+
+
 <nav>
       <a href="/livres-dispo">Livres Disponibles</a>
       <a href="/recherche">Recherche livres</a>
@@ -14,6 +16,36 @@
       <a href="/abonnes">Abonnés</a>
      <a href="#">Quitter</a>
     </nav>
-
+    
+    <section>
+        <h2>Liste des livres</h2>
+           <b>TOTAL :</b>
+        <table class="tab">
+            <tr>
+                <th>ID</th><th>TITRE</th><th>AUTEUR</th>
+            </tr>
+                <tr>
+                <td>idlivre</td>
+                <td>titre</td>
+                <td>auteur</td>
+            </tr>
+        </table>
+      </section>
+  
+  <h2>Formulaire d'ajout des nouveaux livres :</h2>
+    <div class="cont">
+        <form action="" method="POST" >
+              <p>ID LIVRE </p>
+              <input type="text" name="idlivre" class="champ"  size="25"  >
+              <p>TITRE</p>
+              <input type="text" name="titre" class="champ"  size="25"  >
+              <p>NOM AUTEUR</p>
+              <input type="text" name="auteur"   class="champ" size="25">
+            <div>
+              <input type="submit" name="bajout" value="Ajouter " class="bouton" >
+              <input type="submit" name="bsupp" value="Supprimer" class="bouton" >
+            </div>
+        </form>
+    </div>
 </body>
 </html>
